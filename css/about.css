@@ -1,3 +1,10 @@
+:root {
+    --color-red-light: #f8d7da;
+    --color-red: #721c24;
+    --card-border-radius-2: 0.25rem;
+    --color-green-light: #d4edda;
+    --color-green: #155724; /* Green for success text */
+}
 .team {
     background: var(--color-bg1);
     box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
@@ -50,6 +57,77 @@
     padding: 1rem;
 
 }
+
+/*===============Form=================*/
+
+.form__section {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.form__section-container {
+    width: var(--form-witdh);
+}
+
+.alert__message {
+   
+    padding: 0.8rem 1.4rem;
+    margin-bottom: 1rem;
+    border-radius: var(--card-border-radius-2);
+}
+
+/*.alert__message.error {
+    background: var(--color-red-light);
+    color: var(--color-red);
+}
+
+
+.alert__message.success {
+    background: var(--color-green-light);
+    color: var(--color-green);
+}*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+}
+
+.form__control {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, textarea, select {
+    padding: 0.8rem 1.4rem;
+    background: var(--color-light);
+   
+}
+
+.form__section small {
+    margin-top: 1rem;
+    display: block;
+}
+
+.form__section small a {
+    color: var(--color-primary);
+}
+
+.btn {
+    display: inline-block;
+    width: fit-content;
+    padding: 0.6rem 1.2rem;
+    background: var(--color-primary);
+    border-radius: var(--card-border-radius-2);
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--color-white);
+}
+
+
 
 
 /*===============TABLETS=================*/
