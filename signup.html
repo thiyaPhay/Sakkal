@@ -7,7 +7,7 @@
     <title>SAKKAL</title>
 
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/singup.css">
 
     <!--ICONSOUT-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
@@ -30,8 +30,7 @@
                 <li><a href="signup.html">Sign Up</a></li>
                 
             </ul>
-            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
-            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+
         </div>
     </nav>
 
@@ -39,30 +38,29 @@
 
 
 
- <section class="form__section">
-    <div class="container form__section-container">
-        <h2>Sign Up</h2>
-        <div class="alert__message error">
-                <!--<p>This is an error message</p>-->
-        </div>
-        <form action="">
-            <input type="text" placeholder="First Name">
-            <input type="text" placeholder="Last Name">
-            <input type="text" placeholder="Username ">
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Create Password">
-            <input type="password" placeholder="Confirm Password">
-            <div class="form__control">
-                <label for="avatar"></label>
-                <input type="file" id="avatar">
-            </div>
-            <button type="submit" class="btn">Sign Up</button>
-            <small>Already have an accout? <a href="singin.html">Sign In</a></small>
-        </form>
+    <div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
 
-    </div>
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="txt" placeholder="User name" required="">
+					<input type="email" name="email" placeholder="Email" required="">
+          
+					<input type="password" name="password" placeholder="Password" required="">
+					<button>Sign up</button>
+				</form>
+			</div>
 
- </section>
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="password" placeholder="Password" required="">
+					<button>Login</button>
+				</form>
+			</div>
+	</div>
 
 
 </body>
